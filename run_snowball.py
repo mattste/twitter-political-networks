@@ -1,5 +1,3 @@
-import tweepy
-
 from auth import Authenticate
 from api import API
 from snowball import Snowball
