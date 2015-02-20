@@ -6,7 +6,7 @@ A research project with Julia Kamin on examining the spread of political informa
 Install the dependencies:
 ```pip install -r requirements.txt```
 
-Verify you have a Twitter app set-up. Visit [https://apps.twitter.com/] for auth information for your app.
+Verify you have a Twitter app set-up. Visit [Twitter's app authentication page](https://apps.twitter.com/) for auth information for your app.
 
 Create your config.py file that has the following values:
 ```
