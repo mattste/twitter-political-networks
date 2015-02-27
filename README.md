@@ -37,3 +37,16 @@ Pass the api object to the class you'll be working with, such as in our snowball
 ```
 sb = Snowball(api)
 ```
+
+### Run Tests
+
+First, you've got to run it from outside of the package. 
+```
+pwd // should be in twitter-political-networks folder
+cd ..
+```
+
+Now run the tests:
+```
+python -m unittest discover
+```
