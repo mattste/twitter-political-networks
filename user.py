@@ -40,7 +40,7 @@ class User(object):
 				# self.api.lookup_users(user_ids=self.friends)
 				# pass
 		except TweepError as e:
-			print "Encountered error: %s for user id: %s" % (e, user_id)
+			print "Encountered error: %s for user id: %s" % (e, self.user_id)
 			return []
 
 		return self.friends
