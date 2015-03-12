@@ -9,6 +9,7 @@ class User(object):
 	
 	def __init__(self, api, screen_name=None, user_id=None):
 		self.api = api
+		self.friends = None
 
 		if screen_name is None and user_id is None:
 			raise MissingArgumentError("You must provide a screen name or userid")
@@ -31,17 +32,19 @@ class User(object):
 		try:
 			if not self.friends:
 				self.friends = self.api.friends_ids(id=self.user_id)
-			
+
 			# Get detailed information for all friends
 			if detailed:
+				raise NotImplementedError
 				# implement and test
 				# self.api.lookup_users(user_ids=self.friends)
-				pass
+				# pass
 		except TweepError as e:
 			print "Encountered error: %s for user id: %s" % (e, user_id)
 			return []
 
 		return self.friends
+
 
 class RandomUsers(object):
 
